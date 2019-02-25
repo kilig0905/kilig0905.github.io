@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>About Us</title>
+    <!-- for-mobile-apps -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="" />
+    <script type="application/x-javascript">
+        addEventListener("load", function() {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+    <!-- //for-mobile-apps -->
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <!-- js -->
+    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+
+    <!-- //js -->
+    <!-- animation-effect -->
+    <link href="css/animate.min.css" rel="stylesheet">
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <!-- //animation-effect -->
+    <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+    <!-- start-smoth-scrolling -->
+    <script type="text/javascript" src="js/move-top.js"></script>
+    <script type="text/javascript" src="js/easing.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function($) {
+            $(".scroll").click(function(event) {
+                event.preventDefault();
+                $('html,body').animate({
+                    scrollTop: $(this.hash).offset().top
+                }, 1000);
+
+            });
+
+        });
+        $.fn.RangeSlider = function(cfg) {
+            this.sliderCfg = {
+                min: cfg && !isNaN(parseFloat(cfg.min)) ? Number(cfg.min) : null,
+                max: cfg && !isNaN(parseFloat(cfg.max)) ? Number(cfg.max) : null,
+                step: cfg && Number(cfg.step) ? cfg.step : 1,
+                callback: cfg && cfg.callback ? cfg.callback : null
+            };
+            var $input = $(this);
+            var min = this.sliderCfg.min;
+            var max = this.sliderCfg.max;
+            var step = this.sliderCfg.step;
+            var callback = this.sliderCfg.callback;
+            $input.attr('min', min)
+                .attr('max', max)
+                .attr('step', step);
+            $input.bind("input", function(e) {
+                $input.attr('value', this.value);
+
+                if ($.isFunction(callback)) {
+                    callback(this);
+                }
+            });
+        };
+    </script>
+    <!-- start-smoth-scrolling -->
+
+</head>
+
+<body>
+    <!-- header -->
+    <div class="header">
+
+        <nav class="navbar navbar-default">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				  </button>
+                <div class="logo">
+                    <h1><a class="navbar-brand" href="index.html">智能家居管理平台</a></h1>
+                </div>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
+                <nav class="menu menu--francisco">
+                    <ul class="nav navbar-nav menu__list">
+                          
+                            <li class="menu__item "><a href="index.html" class="menu__link"><span class="menu__helper">智能家居</span></a></li>
+                            <li class="menu__item menu__item--current"><a href="control.html" class="menu__link"><span class="menu__helper">家居控制</span></a></li>
+                            <li class="menu__item"><a href="pattern.html" class="menu__link"><span class="menu__helper">情景模式</span></a></li>
+                            <li class="menu__item"><a href="mail.html" class="menu__link"><span class="menu__helper">留言反馈</span></a></li>
+                       
+                    </ul>
+                </nav>
+
+                <!--				     <div class="weather"><iframe scrolling="no" frameborder="0" allowtransparency="true" src="http://i.tianqi.com/index.php?c=code&id=36&icon=5&num=5"></iframe></div>-->
+                <div class="login">
+                    <p><span class='username1'>用户名</span><span class='exit'>退出</span></p>
+                </div>
+
+            </div>
+
+        </nav>
+    </div>
+
+    <!-- //header 
+            <!-- banner -->
+    <div class="banner1">
+        <div class="container">
+            <h2 class="animated wow slideInLeft" data-wow-delay=".5s"><a href="index.html">主页</a> / <span>家居控制</span></h2>
+        </div>
+    </div>
+    <!-- //banner -->
+
+    <!-- team -->
+    <div class="equipment">
+        <div class="container">
+            <h3 class="animated wow zoomIn" data-wow-delay=".5s">智能监控</h3>
+            <p class="qui animated wow zoomIn" data-wow-delay=".5s">Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil.</p>
+            <div class="equipment-grids">
+                <div class="col-md-3 equipment-grid animated wow slideInLeft" data-wow-delay=".5s">
+                    <img src="images/light.png" alt=" " class="img-responsive" width="130px;" />
+                    <h4>灯光</h4>
+
+                </div>
+                <!--
+                        <div class="light hid">
+                            
+                            <form id="light">
+
+                                <ul>
+                                    <li>卧室灯1
+                                        <div class="bg_con"><input id="checked_1" type="checkbox" name="checked_1" class="theHelper" /><label for="checked_1"></label> </div>
+                                    </li>
+                                    <li>卧室灯2
+                                        <div class="bg_con"><input id="checked_2" type="checkbox" name="checked_2" class="theHelper" /><label for="checked_2"></label> </div>
+                                    </li>
+                                    <li>卧室灯3
+                                        <div class="bg_con"><input id="checked_3" type="checkbox" name="checked_3" class="theHelper" /><label for="checked_3"></label> </div>
+                                    </li>
+                                    <li>客厅主灯
+                                        <div class="bg_con"><input id="checked_4" type="checkbox" name="checked_4" class="theHelper" /><label for="checked_4"></label> </div>
+                                    </li>
+                                    <li>卫生间灯
+                                        <div class="bg_con"><input id="checked_5" type="checkbox" name="checked_5" class="theHelper" /><label for="checked_5"></label> </div>
+                                    </li>
+                                    <li>厨房灯
+                                        <div class="bg_con"><input id="checked_6" type="checkbox" name="checked_6" class="theHelper" /><label for="checked_6"></label> </div>
+                                    </li>
+                                </ul>
+                                <div class="close-btn"></div><div class="set-btn"></div>
+                            </form>
+                        </div>
+-->
+
+                <div class="col-md-3 equipment-grid animated wow slideInLeft" data-wow-delay=".6s">
+                    <img src="images/dianshi.png" alt=" " class="img-responsive" width="130px" />
+                    <h4>影音</h4>
+                </div>
+                <!--
+                        <div class="movie hid">
+
+                            <form id="movie">
+
+                                <ul>
+                                    <li>电视机
+                                        <div class="bg_con"><input id="checked_1" type="checkbox" name="checked_1" class="theHelper" /><label for="checked_1"></label> </div>
+                                    </li>
+                                    <li>音响1
+                                        <div class="bg_con"><input id="checked_2" type="checkbox" name="checked_2" class="theHelper" /><label for="checked_2"></label> </div>
+                                    </li>
+                                    <li>音响2
+                                        <div class="bg_con"><input id="checked_3" type="checkbox" name="checked_3" class="theHelper" /><label for="checked_3"></label> </div>
+                                    </li>
+
+                                </ul>
+                                <div class="close-btn"></div><div class="set-btn"></div>
+                            </form>
+                        </div>
+-->
+                <div class="col-md-3 equipment-grid animated wow slideInLeft" data-wow-delay=".7s">
+                    <img src="images/rehsui.png" alt=" " class="img-responsive" />
+                    <h4>热水器</h4>
+                </div>
+                <!--
+                        <div class="water-heater hid">
+
+                            <form id="water-heater">
+
+                                <ul>
+                                    <li>热水器1
+                                        <div class="bg_con"><input id="checked_1" type="checkbox" name="checked_1" class="theHelper" /><label for="checked_1"></label> </div>
+                                    </li>
+                                    <li>热水器2
+                                        <div class="bg_con"><input id="checked_2" type="checkbox" name="checked_2" class="theHelper" /><label for="checked_2"></label> </div>
+                                    </li>
+                                    <li>开水壶
+                                        <div class="bg_con"><input id="checked_3" type="checkbox" name="checked_3" class="theHelper" /><label for="checked_3"></label> </div>
+                                    </li>
+
+                                </ul>
+                                <div class="close-btn"></div><div class="set-btn"></div>
+                            </form>
+                        </div>
+-->
+
+                <div class="col-md-3 equipment-grid animated wow slideInLeft" data-wow-delay=".8s">
+                    <img src="images/chufang.png" alt=" " class="img-responsive" />
+                    <h4>厨房电器</h4>
+
+                </div>
+                <!--
+                        <div class="kitchen hid">
+
+                            <form id="kitchen">
+
+                                <ul>
+                                    <li>电饭锅
+                                        <div class="bg_con"><input id="checked_1" type="checkbox" name="checked_1" class="theHelper" /><label for="checked_1"></label> </div>
+                                    </li>
+                                    <li>微波炉
+                                        <div class="bg_con"><input id="checked_2" type="checkbox" name="checked_2" class="theHelper" /><label for="checked_2"></label> </div>
+                                    </li>
+                                    <li>油烟机
+                                        <div class="bg_con"><input id="checked_3" type="checkbox" name="checked_3" class="theHelper" /><label for="checked_3"></label> </div>
+                                    </li>
+
+                                </ul>
+                                <div class="close-btn"></div><div class="set-btn"></div>
+                            </form>
+                        </div>
+-->
+
+                <div class="col-md-3 equipment-grid animated wow slideInLeft" data-wow-delay=".5s">
+                    <img src="images/xiyiji.png" alt=" " class="img-responsive" />
+                    <h4>洗衣机</h4>
+
+                </div>
+                <!--
+                        <div class="washer hid">
+
+                            <form id="washer">
+
+                                <ul>
+                                    <li>洗衣机1
+                                        <div class="bg_con"><input id="checked_1" type="checkbox" name="checked_1" class="theHelper" /><label for="checked_1"></label> </div>
+                                    </li>
+                                    <li>洗衣机2
+                                        <div class="bg_con"><input id="checked_2" type="checkbox" name="checked_2" class="theHelper" /><label for="checked_2"></label> </div>
+                                    </li>
+
+                                </ul>
+                               <div class="close-btn"></div><div class="set-btn"></div>
+                            </form>
+                        </div>
+
+-->
+
+                <div class="col-md-3 equipment-grid animated wow slideInLeft" data-wow-delay=".7s">
+                    <img src="images/kongtiao.png" alt=" " class="img-responsive" />
+                    <h4>空调</h4>
+
+                </div>
+                <div class="air-condition hid">
+
+                    <form id="air-condition">
+
+                        <ul>
+                            <li style="list-style-type:none">
+                                温度<span>&nbsp;&nbsp;&nbsp;23&#8451</span>
+                                <div class="range-con"><input id="numbel1" type="range" name="numbel1" value="23" class="tempe2" max="38" min="0" step="1" /></div>
+                            </li>
+                            <li>空调1
+                                <div class="bg_con"><input id="checked_1" type="checkbox" name="checked_1" class="theHelper" /><label for="checked_1"></label> </div>
+                            </li>
+                            <li style="list-style-type:none">
+                               温度<span>&nbsp;&nbsp;&nbsp;24&#8451</span>
+                                <div class="range-con"><input id="numbel2" type="range" name="numbel2" value="24" class="tempe2" max="38" min="0" step="1" /></div>
+                            </li>
+                            <li>空调2
+                                <div class="bg_con"><input id="checked_2" type="checkbox" name="checked_2" class="theHelper" /><label for="checked_2"></label> </div>
+                            </li>
+                            <li>除湿器
+                                <div class="bg_con"><input id="checked_3" type="checkbox" name="checked_3" class="theHelper" /><label for="checked_3"></label> </div>
+                            </li>
+
+                        </ul>
+                        <div class="close-btn"></div>
+                        <div class="set-btn"></div>
+                    </form>
+                </div>
+
+                <div class="col-md-3 equipment-grid animated wow slideInLeft" data-wow-delay=".8s">
+                    <img src="images/wendu.png" alt=" " class="img-responsive" />
+                    <h4>温度探测器</h4>
+                </div>
+                
+<!--
+                        <div class="temperature hid">
+
+                            <form id="temperature">
+
+                                <ul>
+                                    <li>温度探测器
+                                        <div class="bg_con"><input id="checked_1" type="checkbox" name="checked_1" class="theHelper" /><label for="checked_1"></label> </div>
+                                    </li>
+                                    <li style="list-style-type:none">
+                                        <a href="#" class="qushi">今日温度趋势</a>
+                                    </li>
+                                    <li>烟雾报警器
+                                        <div class="bg_con"><input id="checked_2" type="checkbox" name="checked_2" class="theHelper" /><label for="checked_2"></label> </div>
+                                    </li>
+
+
+                                </ul>
+                                                       <div class="close-btn"></div>
+                        <div class="set-btn"></div>
+                            </form>
+                        </div>
+-->
+
+                <div class="col-md-3 equipment-grid animated wow slideInLeft" data-wow-delay=".8s">
+                    <img src="images/men.png" alt=" " class="img-responsive" width="130px;" />
+                    <h4>门锁</h4>
+                </div>
+                <!--
+                        <div class="door hid">
+
+                            <form id="door">
+
+                                <ul>
+                                    <li>智能安全门1（正门）
+                                        <div class="bg_con"><input id="checked_1" type="checkbox" name="checked_1" class="theHelper" /><label for="checked_1"></label> </div>
+                                    </li>
+                                    <li>智能门锁（卧室1）
+                                        <div class="bg_con"><input id="checked_2" type="checkbox" name="checked_2" class="theHelper" /><label for="checked_2"></label> </div>
+                                    </li>
+                                    <li>智能门锁（卧室2）
+                                        <div class="bg_con"><input id="checked_3" type="checkbox" name="checked_3" class="theHelper" /><label for="checked_2"></label> </div>
+                                    </li>
+                                    <li>智能门锁（厨房）
+                                        <div class="bg_con"><input id="checked_5" type="checkbox" name="checked_5" class="theHelper" /><label for="checked_2"></label> </div>
+                                    </li>
+                                </ul>
+                                                        <div class="close-btn"></div>
+                        <div class="set-btn"></div>
+                            </form>
+                        </div>
+-->
+
+                <div class="col-md-3 equipment-grid animated wow slideInLeft" data-wow-delay=".6s">
+                    <img src="images/chuanghu.png" alt=" " class="img-responsive" width="130px" />
+                    <h4>窗户</h4>
+                </div>
+                <!--
+                        <div class="window hid">
+
+                            <form id="window">
+
+                                <ul>
+                                    <li>客厅窗户1
+                                        <div class="bg_con"><input id="checked_1" type="checkbox" name="checked_1" class="theHelper" /><label for="checked_1"></label> </div>
+                                    </li>
+                                    <li>客厅窗户2
+                                        <div class="bg_con"><input id="checked_2" type="checkbox" name="checked_2" class="theHelper" /><label for="checked_2"></label> </div>
+                                    </li>
+                                    <li>卧室窗户1
+                                        <div class="bg_con"><input id="checked_3" type="checkbox" name="checked_3" class="theHelper" /><label for="checked_2"></label> </div>
+                                    </li>
+                                    <li>卧室窗户2
+                                        <div class="bg_con"><input id="checked_4" type="checkbox" name="checked_4" class="theHelper" /><label for="checked_2"></label> </div>
+                                    </li>
+                                    <li>客厅窗帘
+                                        <div class="bg_con"><input id="checked_5" type="checkbox" name="checked_5" class="theHelper" /><label for="checked_2"></label> </div>
+                                    </li>
+                                    <li>卧室窗帘1
+                                        <div class="bg_con"><input id="checked_6" type="checkbox" name="checked_6" class="theHelper" /><label for="checked_2"></label> </div>
+                                    </li>
+                                    <li>卧室窗帘2
+                                        <div class="bg_con"><input id="checked_7" type="checkbox" name="checked_7" class="theHelper" /><label for="checked_2"></label> </div>
+                                    </li>
+
+                                </ul>
+                                                        <div class="close-btn"></div>
+                        <div class="set-btn"></div>
+                            </form>
+                        </div>
+                        
+-->
+                <div class="col-md-3 equipment-grid animated wow slideInLeft" data-wow-delay=".7s">
+                    <img src="images/shexiang.png" alt=" " class="img-responsive" />
+                    <h4>监控摄像</h4>
+                </div>
+                
+<!--
+                        <div class="monitor hid">
+
+                            <form id="monitor">
+
+                                <ul>
+                                    <li>监控1
+                                        <div class="bg_con"><input id="checked_1" type="checkbox" name="checked_1" class="theHelper" /><label for="checked_1"></label> </div>
+                                    </li>
+                                    <li style="list-style-type:none">
+                                        <a href="#" class="mon1">查看实时画面</a>
+                                    </li>
+                                    <li>监控2
+                                        <div class="bg_con"><input id="checked_2" type="checkbox" name="checked_2" class="theHelper" /><label for="checked_2"></label> </div>
+                                    </li>
+                                     <li style="list-style-type:none">
+                                        <a href="#" class="mon2">查看实时画面</a>
+                                    </li>
+
+                                </ul>
+                          <div class="close-btn"></div>
+                        <div class="set-btn"></div>
+                            </form>
+                        </div>
+-->
+
+                <div class="col-md-3 equipment-grid animated wow slideInLeft" data-wow-delay=".7s">
+                    <img src="images/shui.png" alt=" " class="img-responsive" />
+                    <h4>智能水电</h4>
+
+                </div>
+                <!--
+                        <div class="water-ele hid">
+                                 <div class="close"></div>
+                            <form id="water-ele">
+                           
+                                <ul>
+                                    <li>电量余量
+                                      <span class="electricity">79度</span>
+                                    </li>
+                                    <li>用水余量
+                                       <span class="water">12L</span>
+                                    </li>
+
+                                </ul>
+                                <div class="close-btn"></div>
+                                <div class="set-btn"></div>
+                            </form>
+                        </div>
+-->
+                -->
+                <div class="clearfix"> </div>
+                <p class="animated wow slideInUp" data-wow-delay=".5s">Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- //team -->
+    <!-- footer -->
+    <div class="footer">
+        <div class="container">
+
+
+            <div class="footer-grids1">
+                <div class="footer-grids1-left animated wow slideInLeft" data-wow-delay=".5s">
+                    <ul>
+                        
+                        <li ><a href="index.html">Home</a></li>
+                        <li class="active"><a href="control.html">Control</a></li>
+                        <li><a href="pattern.html">Pattern</a></li>
+                        <li><a href="mail.html">Mail Us</a></li>
+                    </ul>
+                   
+                </div>
+                <div class="footer-grids1-right">
+                    <p class="animated wow slideInRight" data-wow-delay=".5s">Copyright &copy; 2018.浙江工商大学毕业设计-信息与电子工程学院</p>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+        </div>
+    </div>
+    <!-- //footer -->
+    <!-- for bootstrap working -->
+    <script src="js/bootstrap.js"></script>
+    <!-- //for bootstrap working -->
+    <!-- here stars scrolling icon -->
+    <script type="text/javascript">
+        $(document).ready(function() {
+
+
+            $().UItoTop({
+                easingType: 'easeOutQuart'
+            });
+            $("input[type='range']").on('input propertychange',function(){
+                $(this).parent().prev('span').html("&nbsp;&nbsp;&nbsp;"+this.value+"&#8451");
+
+            })
+
+        });
+    </script>
+    <!-- //here ends scrolling icon -->
+</body>
+
+</html>

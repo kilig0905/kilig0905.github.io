@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Mail Us</title>
+<!-- for-mobile-apps -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //for-mobile-apps -->
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!-- js -->
+<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+<!-- //js -->
+<!-- gallery -->
+<link href='css/simplelightbox.css' rel='stylesheet' type='text/css'>
+<!-- //gallery -->
+<!-- animation-effect -->
+<link href="css/animate.min.css" rel="stylesheet"> 
+<script src="js/wow.min.js"></script>
+<script>
+ new WOW().init();
+</script>
+<!-- //animation-effect -->
+<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+<!-- start-smoth-scrolling -->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){		
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+</script>
+<!-- start-smoth-scrolling -->
+
+</head>
+	
+<body>
+<!-- header -->
+	<div class="header">
+		<div class="container">
+			<nav class="navbar navbar-default">
+
+				<div class="navbar-header">
+				  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				  </button>
+					<div class="logo">
+						<h1><a class="navbar-brand" href="index.html">智能家居管理平台</a></h1>
+					</div>
+				</div>
+
+
+				<div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
+					<nav class="menu menu--francisco">
+						<ul class="nav navbar-nav menu__list">
+							 <li class="menu__item "><a href="index.html" class="menu__link"><span class="menu__helper">智能家居</span></a></li>
+                            <li class="menu__item "><a href="control.html" class="menu__link"><span class="menu__helper">家居控制</span></a></li>
+                            <li class="menu__item"><a href="pattern.html" class="menu__link"><span class="menu__helper">情景模式</span></a></li>
+                            <li class="menu__item menu__item--current"><a href="mail.html" class="menu__link"><span class="menu__helper">留言反馈</span></a></li>
+						</ul>
+					</nav>
+					 <!--				     <div class="weather"><iframe scrolling="no" frameborder="0" allowtransparency="true" src="http://i.tianqi.com/index.php?c=code&id=36&icon=5&num=5"></iframe></div>-->
+                    <div class="login">
+                        <p><span class='username1'>用户名</span><span class='exit'>退出</span></p>
+                    </div>
+
+				</div>
+				<!-- /.navbar-collapse -->
+			</nav>
+		</div>
+	</div>
+<!-- //header -->
+<!-- banner -->
+	<div class="banner1">
+		<div class="container">
+			<h2 class="animated wow slideInLeft" data-wow-delay=".5s"><a href="index.html">主页</a> / <span>留言</span></h2>
+		</div>
+	</div>
+<!-- //banner -->
+<!-- mail -->
+	<div class="mail">	
+		<div class="container">
+			<h3 class="animated wow zoomIn" data-wow-delay=".5s">Mail Us</h3>
+
+			<iframe class="animated wow slideInLeft" data-wow-delay=".5s" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3098.7638135888296!2d-77.47669308468912!3d39.04350424592369!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b63eb3bc8da92b%3A0x78c8e09ab1cabc90!2sShopping+Plaza%2C+Ashburn%2C+VA+20147%2C+USA!5e0!3m2!1sen!2sin!4v1457602090579" frameborder="0" style="border:0" allowfullscreen></iframe>		
+		</div>
+	</div>
+<!-- //mail -->
+<!-- footer -->
+<div class="footer">
+        <div class="container">
+
+
+            <div class="footer-grids1">
+                <div class="footer-grids1-left animated wow slideInLeft" data-wow-delay=".5s">
+                    <ul>
+                        <li ><a href="index.html">Home</a></li>
+                        <li><a href="control.html">Control</a></li>
+                        <li ><a href="pattern.html">Pattern</a></li>
+                        <li class="active"><a href="mail.html">Mail Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-grids1-right">
+                    <p class="animated wow slideInRight" data-wow-delay=".5s">Copyright &copy; 2018.浙江工商大学毕业设计-信息与电子工程学院</p>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+        </div>
+    </div>
+<!-- //footer -->
+<!-- for bootstrap working -->
+	<script src="js/bootstrap.js"></script>
+<!-- //for bootstrap working -->
+<!-- here stars scrolling icon -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+				};
+			*/
+								
+			$().UItoTop({ easingType: 'easeOutQuart' });
+								
+			});
+	</script>
+<!-- //here ends scrolling icon -->
+</body>
+</html>
